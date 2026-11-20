@@ -37,14 +37,14 @@ if (savedEmail) {
 passwordToggle.addEventListener("click",function() {  
     if (passwordInput.type === "password") {
         passwordInput.type = "text";
-        passwordIcon.classList.remove("ri-eye-line");
-        passwordIcon.classList.add("ri-eye-off-line");
+        passwordIcon.classList.remove("ri-eye-off-line");
+        passwordIcon.classList.add("ri-eye-line");
         passwordToggle.setAttribute("aria-label","Hide password");
     }
     else {
         passwordInput.type = "password";
-        passwordIcon.classList.remove("ri-eye-off-line");
-        passwordIcon.classList.add("ri-eye-line")
+        passwordIcon.classList.remove("ri-eye-line");
+        passwordIcon.classList.add("ri-eye-off-line")
         passwordToggle.setAttribute("aria-label","Show password");
     }
 
