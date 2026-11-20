@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aurora Glass Login</title>
+        <meta name="description" content="A modern glassmorphism login form with animated aurora background and interactive authentication features.">
+        <meta name="author" content="MetaSkillGroup">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+<body>
+    <div class="aurora-background">
+        <div class="aurora-shape shape-1"></div>
+        <div class="aurora-shape shape-2"></div>
+        <div class="aurora-shape shape-3"></div>
+        <div class="aurora-shape shape-4"></div>
+    </div>
+
+
+    <div class="login-container">
+        <div class="login-card">
+            <div class="login-header">                             
+                <div class="logo">
+                    <i class="ri-user-line"></i>
+                </div>
+                <h1>Welcome Back</h1>
+                <p>Sign in to continue to your account</p>                          
+            </div>
+
+            <form class="login-form">
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" autocomplete="email" placeholder=" " required>
+                </div>
+                 
+                <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" autocomplete="current-password" placeholder=" " required>
+                        <button type="button" class="password-toggle" aria-label="Show password">
+                            <i class="ri-eye-line"></i>
+                        </button>                   
+                </div>
+
+                <p class="caps-warning">Caps Lock is ON</p>
+                
+                <div class="form-options">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Remember me</label>
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                </div>
+                
+
+                <button type="submit" class="login-btn">Sign In
+                    <i class="ri-arrow-right-line"></i>
+                </button>
+
+                <div class="divider">
+                    <hr>
+                    Or continue with
+                    <hr>
+
+                </div>
+                 
+                <div class="social-login">
+                    <button type="button" class="social-btn google-btn">
+                        <i class="ri-google-fill"></i> Google
+                    </button>
+
+                    <button  type="button" class="social-btn github-btn">
+                        <i class="ri-github-fill"></i> GitHub
+                    </button>
+                </div>
+            </form> 
+
+            <div class="signup-section">
+                <p>Don't have an account?</p>
+                <a class="signup-link" href="#">Sign up</a>
+            </div>
+
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
